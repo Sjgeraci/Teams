@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Opening Project Operations...</title>
-
-    <script>
-        function openInBrowser() {
-            var url = "https://org.crm.dynamics.com/main.aspx?appid=XXXX";
-
-            // Try multiple breakout approaches
-            try {
-                // Method 1: Top window redirect (strongest)
-                window.top.location.href = url;
-            } catch (e) {
-                console.log("Top redirect blocked");
-            }
-
-            try {
-                // Method 2: Parent redirect
-                window.parent.location.href = url;
-            } catch (e) {
-                console.log("Parent redirect blocked");
-            }
-
-            try {
-                // Method 3: Standard redirect fallback
-                window.location.href = url;
-            } catch (e) {
-                console.log("Standard redirect blocked");
-            }
+    <title>Kiel Project Operations</title>
+    <style>
+        body {
+            font-family: Segoe UI, Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f3f2f1;
         }
 
-        // Run immediately
-        openInBrowser();
-    </script>
+        h1 {
+            color: #323130;
+        }
+
+        p {
+            color: #605e5c;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #0078d4;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #005a9e;
+        }
+    </style>
 </head>
 <body>
-    Opening Kiel Project Operations...
+
+    <h1>Kiel Project Operations</h1>
+    <p>For the best experience, open Project Ops in your browser.</p>
+
+    <a class="button"
+       href="https://org.crm.dynamics.com/main.aspx?appid=XXXX"
+       target="_blank">
+        Open Project Operations
+    </a>
+
 </body>
 </html>
